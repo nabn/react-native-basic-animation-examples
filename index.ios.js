@@ -17,7 +17,20 @@ class Piggs extends Component {
 
   getStyle = _ => ([
     styles.square,
-    { transform: this.state.pan.getTranslateTransform() }
+    {
+      transform: [
+        {translateX: this.state.pan.x},
+        {translateY: this.state.pan.y},
+        {rotate: this.state.pan.x.interpolate({
+          inputRange: [-100, 0, 100],
+          outputRange: ['-30deg', '0deg', '30deg']
+        })}
+      ],
+      opacity: this.state.pan.x.interpolate({
+        inputRange: [-100, 0, 100],
+        outputRange: [0.3, 1, 0.3]
+      })
+    },
   ])
 
   componentWillMount = _ => {
@@ -36,7 +49,11 @@ class Piggs extends Component {
       onPanResponderMove: Animated.event([
         null, {dx: this.state.pan.x, dy: this.state.pan.y}
       ]),
-      onPanResponderRelease: _ => this.state.pan.flattenOffset(),
+      onPanResponderRelease: _ => {
+        Animated.spring(this.state.pan,{
+          toValue: 0
+        }).start()
+      }
     })
   }
 
