@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -23,6 +22,11 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		CD60479CDD584FA683FF42F6 /* BLACKJAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = D1A2BE4138CB4B4896B81D70 /* BLACKJAR.TTF */; };
+		30B697A58E784674B51BB1A0 /* Candy Script.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DDD82CAAD37438B909391A0 /* Candy Script.ttf */; };
+		531BC3E162FB42DFB0705657 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7273B40ACDF47919334E828 /* Raleway-Bold.ttf */; };
+		7BD72535E2044BD3B54CA338 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFBF272EF1A1496180304F31 /* Raleway-SemiBold.ttf */; };
+		62A6128D45C144C7B721EDAA /* VarelaRound-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D433328C0504428B95EA47BC /* VarelaRound-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +131,11 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = ../node_modules/react-native/React/React.xcodeproj; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = ../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = ../node_modules/react-native/Libraries/Text/RCTText.xcodeproj; sourceTree = "<group>"; };
+		D1A2BE4138CB4B4896B81D70 /* BLACKJAR.TTF */ = {isa = PBXFileReference; name = "BLACKJAR.TTF"; path = "../assets/fonts/BLACKJAR.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6DDD82CAAD37438B909391A0 /* Candy Script.ttf */ = {isa = PBXFileReference; name = "Candy Script.ttf"; path = "../assets/fonts/Candy Script.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D7273B40ACDF47919334E828 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; name = "Raleway-Bold.ttf"; path = "../assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DFBF272EF1A1496180304F31 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBold.ttf"; path = "../assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D433328C0504428B95EA47BC /* VarelaRound-Regular.ttf */ = {isa = PBXFileReference; name = "VarelaRound-Regular.ttf"; path = "../assets/fonts/VarelaRound-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +302,7 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* piggsTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				62E802C970E84B8FB40E4B00 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -305,6 +315,19 @@
 				00E356EE1AD99517003FC87E /* piggsTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		62E802C970E84B8FB40E4B00 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D1A2BE4138CB4B4896B81D70 /* BLACKJAR.TTF */,
+				6DDD82CAAD37438B909391A0 /* Candy Script.ttf */,
+				D7273B40ACDF47919334E828 /* Raleway-Bold.ttf */,
+				DFBF272EF1A1496180304F31 /* Raleway-SemiBold.ttf */,
+				D433328C0504428B95EA47BC /* VarelaRound-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +375,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -509,6 +532,11 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				CD60479CDD584FA683FF42F6 /* BLACKJAR.TTF in Resources */,
+				30B697A58E784674B51BB1A0 /* Candy Script.ttf in Resources */,
+				531BC3E162FB42DFB0705657 /* Raleway-Bold.ttf in Resources */,
+				7BD72535E2044BD3B54CA338 /* Raleway-SemiBold.ttf in Resources */,
+				62A6128D45C144C7B721EDAA /* VarelaRound-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,11 +642,11 @@
 				);
 				INFOPLIST_FILE = "piggs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-        OTHER_LDFLAGS = (
+				OTHER_LDFLAGS = (
 					"$(inherited)",
-          "-ObjC",
-          "-lc++",
-        );
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_NAME = piggs;
 			};
 			name = Debug;
@@ -634,11 +662,11 @@
 				);
 				INFOPLIST_FILE = "piggs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-        OTHER_LDFLAGS = (
+				OTHER_LDFLAGS = (
 					"$(inherited)",
-          "-ObjC",
-          "-lc++",
-        );
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_NAME = piggs;
 			};
 			name = Release;
